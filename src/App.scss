@@ -1,0 +1,28 @@
+@import "../src/media.scss";
+@import "../src/function.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* background: #e5e5e5; */
+}
+body {
+  // background-color: #11121d;
+  // font-family: "NotoSansJP-Light";
+}
+.container {
+  @include for-size(phone-only) {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include for-size(tablet-portrait-up) {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include for-size(desktop-up) {
+    max-width: 1380px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

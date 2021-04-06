@@ -1,0 +1,41 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 11px;
+  padding: 10px 20px;
+  margin: 6px;
+  color: #4a47a3;
+  font-weight: 500;
+  @include for-size(phone-only) {
+    font-size: 70%;
+    padding: 8px 12px;
+  }
+  .card_values {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 12px;
+      @include for-size(phone-only) {
+        font-size: 70%;
+      }
+    }
+  }
+}
+.first_span {
+  font-size: 10px;
+  font-weight: 500;
+  @include for-size(phone-only) {
+    font-size: 70%;
+  }
+}

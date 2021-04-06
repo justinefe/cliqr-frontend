@@ -1,0 +1,38 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.ExpenseCard {
+  background: #a7c5eb;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  margin: 6px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include for-size(phone-only) {
+    width: 38px;
+  }
+  .ExpenseCard_icon {
+    margin: 7px 7px;
+    width: 22px;
+    height: 22px;
+
+    @include for-size(phone-only) {
+      width: 16px;
+      height: 16px;
+    }
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
