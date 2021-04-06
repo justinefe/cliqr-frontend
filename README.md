@@ -1,4 +1,4 @@
-# Justin Efeoghene Igugu Skooleeo Front-end Task
+# Justin Efeoghene Igugu Qlicr Front-end Task
 
 #### Technologies
 
